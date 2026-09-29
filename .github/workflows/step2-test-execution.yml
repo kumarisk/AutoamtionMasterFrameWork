@@ -1,0 +1,95 @@
+name: Real-Time Test Automation Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *' # Nightly run at 2 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  checks: write
+
+jobs:
+  # ==========================================
+  # STEP 1: VALIDATION & COMPILE CHECK
+  # ==========================================
+  step1-validate:
+    name: "Step 1: Code Quality & Compile Check"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Scan for Secret Leaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compile Test Code
+        run: mvn test-compile -DskipTests
+
+      - name: Run SpotBugs Static Analysis
+        run: mvn spotbugs:check
+        continue-on-error: true
+
+  # ==========================================
+  # STEP 2: TEST EXECUTION
+  # ==========================================
+  step2-execute-tests:
+    name: "Step 2: Run TestNG Automation Suites"
+    needs: step1-validate # Executes only if Step 1 passes
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Execute Automation Tests
+        run: mvn test -DsuiteXmlFile=testng.xml -Dheadless=true
+        continue-on-error: true # Ensures Step 3 runs even on test failures
+
+      # ==========================================
+      # STEP 3: ARTIFACTS & ALLURE REPORTING
+      # ==========================================
+      - name: Upload Screenshots & Logs on Failure
+        uses: actions/upload-artifact@v4
+        if: failure() || cancelled()
+        with:
+          name: failure-artifacts
+          path: |
+            target/surefire-reports/screenshots/
+            target/logs/
+          retention-days: 7
+
+      - name: Build Allure Dashboard
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+          allure_results: target/allure-results
+          allure_history: allure-history
+          keep_reports: 20
+
+      - name: Publish Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history

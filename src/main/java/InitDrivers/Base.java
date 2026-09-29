@@ -5,6 +5,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -39,6 +40,10 @@ public class Base {
 
         switch (browser.toLowerCase()) {
             case "chrome":
+                ChromeOptions options = new ChromeOptions();
+                if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
+                    options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
+                }
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ prop.getProperty("chromeDriverPath"));
                 driver = new ChromeDriver();
                 break;

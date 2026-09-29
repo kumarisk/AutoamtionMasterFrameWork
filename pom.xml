@@ -27,6 +27,8 @@
         <extent.report.version>5.1.1</extent.report.version>
         <log4j.core.version>2.21.1</log4j.core.version>
         <log4j.api.version>2.21.1</log4j.api.version>
+        <aspectj.version>1.9.7</aspectj.version>
+        <allure.version>2.25.0</allure.version>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -129,6 +131,12 @@
             <artifactId>log4j-api</artifactId>
             <version>${log4j.api.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -157,11 +165,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.3</version>
                 <configuration>
-                    <!-- Allows passing custom TestNG suite files via CLI parameter -DsuiteXmlFile -->
-                    <suiteXmlFiles>
-                        <suiteXmlFile>webtestng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
