@@ -1,0 +1,30 @@
+20:51:32.269 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+20:51:33.145 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+20:51:33.234 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+20:51:33.292 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+20:54:03.091 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+20:54:03.807 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+20:54:03.909 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+20:54:03.981 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+21:00:05.380 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+21:00:06.294 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+21:00:06.390 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+21:00:06.450 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+21:04:53.606 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+21:04:54.375 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+21:04:54.480 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+21:04:54.538 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+21:05:29.935 [main] INFO  MobileTests.MobileLoginPageTest - Launched Mobile application
+21:05:34.548 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on skip button
+21:05:51.292 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on Login button from menu
+21:05:55.155 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on Login button from login Screen
+21:05:58.160 [main] INFO  MobileTests.MobileLoginPageTest - Email or Mobile Number has entered
+21:05:58.718 [main] INFO  MobileTests.MobileLoginPageTest - Clicked Submit button
+21:07:13.773 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+21:07:14.560 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+21:07:14.646 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+21:07:14.721 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+21:12:12.092 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+21:12:12.986 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+21:12:13.093 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+21:12:13.162 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button

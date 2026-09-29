@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="platform"  value="web"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/sudhe/IdeaProjects/MasterFrameWork">
+        <classes>
+            <class name="WebTests.WebLoginPageTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+
+<!--
+As of now we are not using this file
+!-->

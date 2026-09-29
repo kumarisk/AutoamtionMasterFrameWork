@@ -1,0 +1,114 @@
+09:35:59.110 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+09:35:59.904 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+09:36:00.043 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+09:36:00.131 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+09:36:19.631 [main] INFO  WebTests.WebLandingPageTest - Trying to click on Mobiles menu from the row
+09:36:22.054 [main] INFO  WebTests.WebLandingPageTest - Text has been entered in the search field
+09:36:26.243 [main] INFO  WebTests.WebLandingPageTest - Trying to select Electronics | Gaming | All 
+09:36:35.871 [main] INFO  WebTests.WebLandingPageTest - selected Electronics | Gaming | All
+09:36:40.132 [main] INFO  WebTests.WebLandingPageTest - Trying to click on Appliances category
+09:36:41.589 [main] INFO  WebTests.WebLandingPageTest - Appliances category is selected
+09:36:46.096 [main] INFO  WebTests.WebLandingPageTest - Trying to click on Grocery category
+09:36:47.379 [main] INFO  WebTests.WebLandingPageTest - Grocery category is selected
+09:36:51.679 [main] INFO  WebTests.WebLandingPageTest - Trying to click on Mobiles Category
+09:36:53.291 [main] INFO  WebTests.WebLandingPageTest - Mobiles Category is selected
+09:36:57.069 [main] INFO  WebTests.WebLandingPageTest - Trying to click on Travel category
+09:37:00.163 [main] INFO  WebTests.WebLandingPageTest - Travel category is selected
+09:37:04.276 [main] INFO  WebTests.WebLandingPageTest - Trying to verify Application logo
+09:37:04.378 [main] INFO  WebTests.WebLandingPageTest - Application logo is displayed
+09:37:08.748 [main] INFO  WebTests.WebLandingPageTest - Trying to verify ribbons are displayed
+09:37:08.807 [main] INFO  WebTests.WebLandingPageTest - All the Ribbons are displayed
+09:37:12.527 [main] INFO  WebTests.WebMobilesPageTest - Trying to search a mobile based on user input
+09:37:14.170 [main] INFO  WebTests.WebMobilesPageTest - Mobile is selected based on user input
+09:37:18.281 [main] INFO  WebTests.WebMobilesPageTest - Trying to select a mobile from the default list
+09:37:22.758 [main] INFO  WebTests.WebMobilesPageTest - Mobile is selected based on user input
+09:37:26.434 [main] INFO  WebTests.WebTravelPageTest - Verifying that user is able to search for bookings based date
+09:37:27.544 [main] INFO  WebTests.WebTravelPageTest - Selected Travel from Row menu and user is on Travel page
+09:37:33.721 [main] INFO  WebTests.WebTravelPageTest - Entered From Address
+09:37:37.106 [main] INFO  WebTests.WebTravelPageTest - Entered To Address
+09:37:42.052 [main] INFO  WebTests.WebTravelPageTest - Entered Travel data Address
+09:37:42.812 [main] INFO  WebTests.WebTravelPageTest - Selected 2 adults, 1 child, 1 infant
+09:37:42.844 [main] INFO  WebTests.WebTravelPageTest - Selected Bussines cabin
+09:37:42.963 [main] INFO  WebTests.WebTravelPageTest - Clicked on Search button
+09:37:46.799 [main] INFO  WebTests.WebTravelPageTest - Verifying Departure field is enabled
+09:37:48.329 [main] INFO  WebTests.WebTravelPageTest - Selected Travel from Row menu and user is on Travel page
+09:37:49.455 [main] INFO  WebTests.WebTravelPageTest - Departure field is enabled
+09:37:53.995 [main] INFO  WebTests.WebTravelPageTest - Verifying From Address text box is enabled
+09:37:55.243 [main] INFO  WebTests.WebTravelPageTest - Selected Travel from Row menu and user is on Travel page
+09:38:00.960 [main] INFO  WebTests.WebTravelPageTest - Verifying To Address text box is enabled
+09:38:02.029 [main] INFO  WebTests.WebTravelPageTest - Selected Travel from Row menu and user is on Travel page
+09:38:02.985 [main] INFO  WebTests.WebTravelPageTest - To Address text box is enabled
+09:38:06.890 [main] INFO  WebTests.WebGroceryPageTest - From Grocery Trying to add a product to cart
+09:38:08.357 [main] INFO  WebTests.WebGroceryPageTest - Entered pincode
+09:38:09.071 [main] INFO  WebTests.WebGroceryPageTest - Selected a product from grocery page
+09:38:11.870 [main] INFO  WebTests.WebGroceryPageTest - product added to cart
+09:38:15.980 [main] INFO  WebTests.WebGroceryPageTest - Trying to search a product based on user input
+09:38:17.343 [main] INFO  WebTests.WebGroceryPageTest - Entered pincode for searching specific product
+09:38:17.588 [main] INFO  WebTests.WebGroceryPageTest - Search results are displayed based on user search
+09:38:21.552 [main] INFO  WebTests.WebFashion_MenFootwear_All_Test - Trying to select Fashion | MensFootWear | All
+09:38:22.393 [main] INFO  WebTests.WebFashion_MenFootwear_All_Test - Mouse hover on Fashion
+09:38:23.322 [main] INFO  WebTests.WebFashion_MenFootwear_All_Test - Mouse hover on Fashion | MensFootWear
+09:38:25.835 [main] INFO  WebTests.WebFashion_MenFootwear_All_Test - Mouse hover on Fashion | MensFootWear | All
+09:38:29.526 [main] INFO  WebTests.WebElectronics_GamingAllTest - Trying to select any one product from the default list
+09:38:30.265 [main] INFO  WebTests.WebElectronics_GamingAllTest - Mouse hove on Electronics
+09:38:31.064 [main] INFO  WebTests.WebElectronics_GamingAllTest - Mouse hove on Electronics sub menu
+09:38:34.215 [main] INFO  WebTests.WebElectronics_GamingAllTest - User navigated to Gaming page
+09:38:38.173 [main] INFO  WebTests.WebElectronics_GamingAllTest - Trying to verify list of products are displaying
+09:38:38.915 [main] INFO  WebTests.WebElectronics_GamingAllTest - Mouse hove on Electronics
+09:38:39.715 [main] INFO  WebTests.WebElectronics_GamingAllTest - Mouse hove on Electronics sub menu
+09:38:45.732 [main] INFO  WebTests.WebElectronics_GamingAllTest - List of products are displayed successfully
+09:38:49.754 [main] INFO  WebTests.WebAppliancesPageTest - Trying to open each link that is present on the Appliances page
+09:40:28.477 [main] INFO  WebTests.WebAppliancesPageTest - Opened Each link that is present on the Appliances page
+09:40:33.140 [main] INFO  WebTests.WebCartPageTest - Trying to verify that user is able to add a product to cart page
+09:40:34.145 [main] INFO  WebTests.WebCartPageTest - Grocery category is selected
+09:40:34.307 [main] INFO  WebTests.WebCartPageTest - Pincode is entered
+09:40:34.972 [main] INFO  WebTests.WebCartPageTest - Selected a product category from grocery page
+09:40:37.940 [main] INFO  WebTests.WebCartPageTest - Product added to cart
+09:40:38.044 [main] INFO  WebTests.WebCartPageTest - Clicked on cart button
+09:40:38.717 [main] INFO  WebTests.WebCartPageTest - Product name that is added by the user is listed in cart page
+09:40:38.795 [main] INFO  WebTests.WebCartPageTest - Price of the Product that is added by the user is listed in cart page
+09:40:38.873 [main] INFO  WebTests.WebCartPageTest - Saving amount is displayed
+09:41:11.390 [main] INFO  MobileTests.MobileLoginPageTest - Launched Mobile application
+09:41:14.692 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on skip button
+09:41:25.503 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on Login button from menu
+09:41:29.174 [main] INFO  MobileTests.MobileLoginPageTest - Clicked on Login button from login Screen
+09:41:32.470 [main] INFO  MobileTests.MobileLoginPageTest - Email or Mobile Number has entered
+09:41:33.345 [main] INFO  MobileTests.MobileLoginPageTest - Clicked Submit button
+09:44:40.624 [main] INFO  APITests.UserTests - Trying to Create New User
+09:44:42.054 [main] INFO  APITests.UserTests - New User created Successfully
+09:44:42.054 [main] INFO  APITests.UserTests - Trying to retrive user Details
+09:44:43.486 [main] INFO  APITests.UserTests - User Details reteived Successfully
+09:44:43.486 [main] INFO  APITests.UserTests - Trying to Update User Details
+09:44:45.078 [main] INFO  APITests.UserTests - Successfully updated the User Details
+09:44:45.078 [main] INFO  APITests.UserTests - Trying to retrive Updated user Data
+09:44:46.562 [main] INFO  APITests.UserTests - Successfully retrived updated User Data
+09:44:46.562 [main] INFO  APITests.UserTests - Trying to delete the User
+09:44:47.928 [main] INFO  APITests.UserTests - User deleted Successfully
+09:44:47.943 [main] INFO  APITests.StoreTests - Trying to get Store inventory status
+09:44:49.443 [main] INFO  APITests.StoreTests - Retrived Store Inventory status
+09:44:49.443 [main] INFO  APITests.StoreTests - Trying to place an order
+09:44:50.914 [main] INFO  APITests.StoreTests - Order placed successfully
+09:44:50.914 [main] INFO  APITests.StoreTests - Retrive the order details based on OrderID
+09:44:52.393 [main] INFO  APITests.StoreTests - Successfully retrived the Order details based on OrderID
+09:44:52.393 [main] INFO  APITests.StoreTests - Trying to delete Order based on OrderID
+09:44:53.923 [main] INFO  APITests.StoreTests - Order deleted successfully
+09:44:53.938 [main] INFO  APITests.PetsTests - Creating a Pet
+09:44:55.472 [main] INFO  APITests.PetsTests - Pet got Created Sucessfully
+09:44:55.472 [main] INFO  APITests.PetsTests - Updating the Pet Details
+09:44:56.896 [main] INFO  APITests.PetsTests - pet details got updated sucessfully
+09:44:56.896 [main] INFO  APITests.PetsTests - Finding the Pet based on given PetID
+09:44:58.353 [main] INFO  APITests.PetsTests - Matching Pet found
+09:44:58.353 [main] INFO  APITests.PetsTests - Deleting the Pet based on PetID
+09:44:59.766 [main] INFO  APITests.PetsTests - Matching Pet deleted sucessfully
+10:37:39.534 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+10:37:40.316 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+10:37:40.457 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+10:37:40.525 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+10:45:58.030 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+10:45:58.991 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+10:45:59.127 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+10:45:59.199 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button
+10:56:06.491 [main] INFO  WebTests.WebLoginPageTest - Launched Web Application
+10:56:07.305 [main] INFO  WebTests.WebLoginPageTest - Clicked on Login button
+10:56:07.425 [main] INFO  WebTests.WebLoginPageTest - Entered Email or Mobile Number
+10:56:07.506 [main] INFO  WebTests.WebLoginPageTest - Clicked on Get OTP button

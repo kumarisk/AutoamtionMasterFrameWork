@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="Utils.Listeners"/>
+    </listeners>
+
+        <test verbose="2" preserve-order="true" name="WebTests">
+            <parameter name="platform"  value="web"/>
+            <classes>
+                <class name="WebTests.WebLoginPageTest"/>
+                <!--<class name="WebTests.WebLandingPageTest"/>
+                <class name="WebTests.WebMobilesPageTest"/>
+                <class name="WebTests.WebTravelPageTest"/>
+                <class name="WebTests.WebGroceryPageTest"/>
+                <class name="WebTests.WebFashion_MenFootwear_All_Test"/>
+                <class name="WebTests.WebElectronics_GamingAllTest"/>
+                <class name="WebTests.WebAppliancesPageTest"/>
+                <class name="WebTests.WebCartPageTest"/>-->
+            </classes>
+        </test>
+
+        <test verbose="2" preserve-order="true" name="MobileTests">
+            <parameter name="platform"  value="mobile"/>
+            <classes>
+                <!--<class name="MobileTests.MobileLoginPageTest"/>
+                <class name="MobileTests.MobileLandingPageTest"/>
+                <class name="MobileTests.MobileExplorePageTest"/>
+                <class name="MobileTests.MobileCategoriesPageTest"/>
+                <class name="MobileTests.MobileCartPageTest"/>-->
+
+            </classes>
+        </test>
+
+        <test name="APITests">
+                <classes>
+                <!--<class name="APITests.DataDrivenTests"/>
+                <class name="APITests.UserTests"/>
+                <class name="APITests.StoreTests"/>
+                <class name="APITests.PetsTests"/>-->
+            </classes>
+        </test>
+
+</suite>
